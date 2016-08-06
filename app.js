@@ -1,12 +1,10 @@
 (function() {
   'use strict'
   angular
-  .module('tripods', ['ui.materialize'])
+  .module('tripods', [])
 
-  .controller('BodyController', ["$scope", function ($scope) {
-    $scope.select = {
-      value: "Option1",
-      choices: ["Option1", "I'm an option", "This is materialize", "No, this is Patrick."]
-    };
+  .controller('MainController', ["$scope", function ($scope) {
+    $scope.dogs = ['alphie', 'bowser', 'gerta', 'maxwell'];
   }]);
+  
 })();
